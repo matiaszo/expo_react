@@ -2,51 +2,61 @@
     {
       "id": "1",
       "title": "PANTONE' 18-0130",
-      "color": "#FF3232FF"
+      "color": "#FF3232FF",
+      "image": "../assets/images/react-logo.png"
     },
     {
       "id": "2",
       "title": "PANTONE' 18-0140",
-      "color": "#7A3333FF"
+      "color": "#7A3333FF",
+      "image": "../assets/images/react-logo.png"
     },
     {
       "id": "3",
       "title": "PANTONE' 18-0150",
-      "color": "#3A8D66FF"
+      "color": "#3A8D66FF",
+      "image": "../assets/images/react-logo.png"
     },
     {
       "id": "4",
       "title": "PANTONE' 18-0160",
-      "color": "#CBDDFFFF"
+      "color": "#CBDDFFFF",
+      "image": "../assets/images/react-logo.png"
     },
     {
       "id": "5",
       "title": "PANTONE' 18-0170",
-      "color": "#084E5AFF"
+      "color": "#084E5AFF",
+      "image": "../assets/images/react-logo.png"
     },
     {
       "id": "6",
       "title": "PANTONE' 18-0180",
-      "color": "#FDBFBFFF"
+      "color": "#FDBFBFFF",
+      "image": "../assets/images/react-logo.png"
     },
     {
       "id": "7",
       "title": "PANTONE' 18-0190",
-      "color": "#C0BFFAFF"
+      "color": "#C0BFFAFF",
+      "image": "../assets/images/react-logo.png"
     },
     {
       "id": "8",
       "title": "PANTONE' 18-0190",
-      "color": "#222236FF"
+      "color": "#222236FF",
+      "image": "../assets/images/react-logo.png"
     },
     {
       "id": "9",
       "title": "PANTONE' 18-0190",
-      "color": "#5E8156FF"
+      "color": "#5E8156FF",
+      "image": "../assets/images/react-logo.png"
     },
     {
       "id": "10",
       "title": "PANTONE' 18-0190",
-      "color": "#FF8E8EFF"
+      "color": "#FF8E8EFF",
+      "image": "../assets/images/react-logo.png"
     }
   ]

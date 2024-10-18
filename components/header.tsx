@@ -5,6 +5,7 @@ export const Header = ({image}: {image: ImageSourcePropType | undefined}) =>{
         <>
             <View style={styles.header}>
                 <Text style={styles.text}>Componente header</Text>
+                <Text style={styles.robotoFont}>Texto</Text>
                 <Image style={styles.image} source={image}/>
             </View>
         </>
@@ -29,6 +30,12 @@ const styles = StyleSheet.create({
     },
     text: {
         fontSize: 30,
-        color: "#ffffff"
+        color: "#ffffff",
+        fontFamily: "inter"
+    },
+    robotoFont: {
+        fontSize: 50,
+        fontFamily: "Roboto",
+        fontWeight: "700"
     }
 })

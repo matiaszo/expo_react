@@ -6,6 +6,7 @@ export default function List(){
 
     return(
         <>
+
          <View style= {styles.page}>
             <Text style={styles.text}>
                 List
@@ -13,7 +14,7 @@ export default function List(){
           </View>
           
             <SafeAreaView style={styles.container}>
-              <FlatList data={DATA} renderItem={({item}) => <Item title={item.title} color={item.color} />} keyExtractor={item => item.id}/>
+              <FlatList data={DATA} renderItem={({item}) => <Item title={item.title} color={item.color} image={item.image} />} keyExtractor={item => item.id}/>
             </SafeAreaView>
         </>
     )
