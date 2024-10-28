@@ -1,9 +1,11 @@
-import { SafeAreaView, StyleSheet, Text, TextInput, TouchableOpacity, View } from "react-native"
-import React, { useState } from "react";
+import { SafeAreaView, StyleSheet, Text, TextInput, TouchableOpacity, View, Alert } from "react-native"
+import React, { useState, useEffect } from "react";
 import { Link, router } from "expo-router";
 import { LinearGradient } from 'expo-linear-gradient';
+import { FIREBASE_AUTH } from "@/firebaseConfig"
 
 import { Image } from "expo-image"
+import { signInWithEmailAndPassword } from "firebase/auth";
 
 export default function Login(){
     const [email, setEmail] = useState('');
@@ -11,6 +13,25 @@ export default function Login(){
 
     const onPress = () => {
         router.push("/(tabs)")
+
+    }
+    const auth = FIREBASE_AUTH;
+
+    useEffect(() =>{
+        console.log(auth.currentUser)
+    }, [auth.currentUser]);
+    useEffect(() => {
+        console.log(email, pass)
+    }, [email, pass]);
+
+    const signIn = () => {
+        signInWithEmailAndPassword(auth, email, pass)
+        .then((dadosUsuario) => {
+            console.log(dadosUsuario);
+            router.push('/(tabs)')
+        }).catch((error) =>{
+            alert(error.message); 
+        })
     }
 
     return(
@@ -44,8 +65,8 @@ export default function Login(){
                         </View>
                     </View>
                
-                <TouchableOpacity style={styles.button} onPress={onPress}>
-                    <Text style={{fontFamily: "inter", fontSize: 20}}>Entrar</Text>
+                <TouchableOpacity style={styles.button} onPress={signIn}>
+                    <Text style={{fontFamily: "inter", fontSize: 20}} >Entrar</Text>
                 </TouchableOpacity>
                 <View>
                     <Link href={"/register"} style={styles.smallButton}>Log new user</Link>
