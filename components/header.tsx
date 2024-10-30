@@ -4,8 +4,8 @@ export const Header = ({image}: {image: ImageSourcePropType | undefined}) =>{
     return(
         <>
             <View style={styles.header}>
-                <Text style={styles.text}>Componente header</Text>
-                <Text style={styles.robotoFont}>Texto</Text>
+                <Text style={styles.text}>Welcome</Text>
+                <Text style={styles.robotoFont}></Text>
                 <Image style={styles.image} source={image}/>
             </View>
         </>
@@ -14,17 +14,18 @@ export const Header = ({image}: {image: ImageSourcePropType | undefined}) =>{
 
 const styles = StyleSheet.create({
     image: {
-        height: 100,
-        width: 100,
+        height: 30,
+        width: 40,
         backgroundColor: "#FFFFFFFF",
         borderRadius: 10,
     },
     header: {
         display: "flex",
+        flexDirection: "row",
         alignItems: "center",
-        padding: 15,
+        justifyContent: "space-evenly",
+        padding: 1,
         backgroundColor: "#09AF40FF",
-        gap: 10,
         borderBottomEndRadius: 5,   
         borderBottomStartRadius: 5   
     },

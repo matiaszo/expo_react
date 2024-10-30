@@ -5,9 +5,11 @@ import { Text, View } from 'react-native';
 
 export default function TabLayout() {
 
+
+
   return (
    <>
-   <Header image={require("../../assets/images/favicon.png")}/>
+   <Header image={require("../../assets/images/biGenderImg.png")}/>
     <Tabs>
       <Tabs.Screen name="index" options={{headerShown: false, tabBarIcon: () =>(<Text>🏡</Text>)}}></Tabs.Screen>
       <Tabs.Screen name="explore" options={{headerShown: false, tabBarIcon: () =>(<Text>🔎</Text>) }}></Tabs.Screen>
