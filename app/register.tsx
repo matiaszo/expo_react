@@ -3,6 +3,7 @@ import { Link } from "expo-router";
 import { createUserWithEmailAndPassword } from "firebase/auth";
 import { useEffect, useState } from "react";
 import { View, Text, Alert } from "react-native";
+import React from "react";
 
 export default function Register(){
     const [email, setEmail] = useState('');

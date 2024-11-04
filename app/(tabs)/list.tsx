@@ -1,6 +1,7 @@
 import { Text, FlatList, View, StyleSheet, StatusBar, SafeAreaView } from "react-native"
 import DATA from "@/constants/data.json";
 import { Item } from "@/components/item";
+import React from "react";
 
 export default function List(){
 

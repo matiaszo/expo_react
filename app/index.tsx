@@ -49,7 +49,7 @@ export default function Login(){
                         <Text style={styles.loginText}>Login to your account</Text>
                     </View>
 
-                    <View style={styles.inputBoxes}>
+                    <View style={styles.inputBoxes}>    
                         <LinearGradient style={styles.gradientBoxes} start={{x: 0.1, y: 0.2}} colors={[ "#7789dd", "#c7cef1"]}>
                             <TextInput style={styles.input} onChangeText={setEmail} value={email} placeholder="   👤   Username" keyboardType="email-address"/>
                         </LinearGradient>

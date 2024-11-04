@@ -14,6 +14,7 @@ export default function TabLayout() {
       <Tabs.Screen name="index" options={{headerShown: false, tabBarIcon: () =>(<Text>🏡</Text>)}}></Tabs.Screen>
       <Tabs.Screen name="explore" options={{headerShown: false, tabBarIcon: () =>(<Text>🔎</Text>) }}></Tabs.Screen>
       <Tabs.Screen name="list" options={{headerShown: false, tabBarIcon: () =>(<Text>📖</Text>) }}></Tabs.Screen>
+      <Tabs.Screen name="asdasd" options={{headerShown: false, tabBarIcon: () =>(<Text>🎶</Text>) }}></Tabs.Screen>
     </Tabs>
    </>
   );

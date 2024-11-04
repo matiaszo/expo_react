@@ -5,6 +5,8 @@ import { Text, View, StyleSheet } from 'react-native';
 import 'react-native-reanimated';
 import { useFonts, Inter_600SemiBold } from "@expo-google-fonts/inter";
 import { useEffect } from 'react';
+import React from "react";
+
 
 
 
